@@ -92,7 +92,6 @@ AFRAME.registerComponent('pipe', {
 
     update: function (oldData) {
         if (this.data.outerRadius < this.data.innerRadius) this.data.innerRadius = this.data.outerRadius;
-        console.log(this.data.outerRadius, this.data.innerRadius);
         this.build();
     }
 });
